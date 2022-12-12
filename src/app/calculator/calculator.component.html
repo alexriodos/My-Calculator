@@ -1,0 +1,32 @@
+<h1 style="text-align:center" >CALCULADORA</h1>
+
+
+<br>
+<p style="text-align:center" >Primer número : {{number1}}
+<input  type="number" [(ngModel)]="number1" />
+</p>
+
+<br>
+<p style="text-align:center" >Segundo número: {{number2}}
+    <input  type="number" [(ngModel)]="number2"/> 
+</p>
+<br>
+<p style="text-align:center">Respuesta: {{result}}</p>
+
+<p style="text-align:center">
+<input 
+type="button"    
+value="Sumar"
+(click)="getAdd()"
+/>
+<input 
+type="button"    
+value="Restar"
+(click)="getSubstract()"
+/>
+<input 
+type="button"    
+value="Multiplicar"
+(click)="getMultiply()"
+/>
+</p>
